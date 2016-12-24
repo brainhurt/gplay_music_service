@@ -13,4 +13,5 @@ pipelines:
           - pip --version
           - tox --version
           - pip install flask
+          - pip install gmusicapi
           - python run.py test
