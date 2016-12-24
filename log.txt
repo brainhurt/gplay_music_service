@@ -1,0 +1,15 @@
+2016-12-24 15:21:35,506 - __name__ - ERROR - login failed
+2016-12-24 15:21:35,507 - __name__ - ERROR - login failed
+2016-12-24 15:21:41,638 - __name__ - ERROR - login failed
+2016-12-24 15:22:27,865 - __name__ - INFO - Login success
+2016-12-24 15:22:28,708 - __name__ - INFO - Login success
+2016-12-24 15:22:28,960 - __name__ - ERROR - login failed
+2016-12-24 15:22:28,961 - __name__ - ERROR - login failed
+2016-12-24 15:22:29,869 - __name__ - INFO - Login success
+2016-12-24 15:22:30,880 - __name__ - INFO - Login success
+2016-12-24 15:22:31,922 - __name__ - INFO - Login success
+2016-12-24 15:22:33,192 - __name__ - INFO - Login success
+2016-12-24 15:22:33,193 - __name__ - ERROR - login failed
+2016-12-24 15:22:34,228 - __name__ - INFO - Login success
+2016-12-24 15:22:34,249 - __name__ - INFO - Unit Tests: 0 failed out of 11
+2016-12-24 15:22:34,249 - __name__ - INFO - Integration Tests: 0 failed out of 5
