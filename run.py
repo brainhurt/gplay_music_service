@@ -27,10 +27,10 @@ if __name__ == "__main__":
             log.info('Unit Tests: '+str(unitResult.failures.__len__())+' failed out of '+str(unitResult.testsRun))
             log.info('Integration Tests: '+str(inteResult.failures.__len__())+' failed out of '+str(inteResult.testsRun))
         elif(sys.argv[1] == "integrationtest"):
-            IntegrationRunner.runIntegrationTests()
+            inteResult = IntegrationRunner.runIntegrationTests()
             log.info('Integration Tests: '+str(inteResult.failures.__len__())+' failed out of '+str(inteResult.testsRun))
         elif(sys.argv[1] == "unittest"):
-            UnitRunner.runUnitTests()
+            unitResult = UnitRunner.runUnitTests()
             log.info('Unit Tests: '+str(unitResult.failures.__len__())+' failed out of '+str(unitResult.testsRun))
         elif(sys.argv[1] == "help"):
             log.info("The options are as follows: ")
