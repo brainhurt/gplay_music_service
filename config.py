@@ -16,11 +16,14 @@ loggingFile='gplayservice.log'
 # gplay login credentials
 gplayUsername='c.andersen2012@gmail.com'
 gplayPassword='Abs14qp99z!'
+maxResults=5
 
 # Flask options
 port = 5000
 host='0.0.0.0'
 
+# Testing options
+server = "http://localhost"
 
 # logging logging configuration
 log = logging.getLogger('__name__')

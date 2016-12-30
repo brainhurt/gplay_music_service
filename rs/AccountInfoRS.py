@@ -7,6 +7,7 @@ from flask import Flask, request, Blueprint, Response
 from rs import JsonHelper
 from rs import GplayConnection
 from rs import AccountInfo
+from rs import Error
 
 app = Flask(__name__)
 
@@ -20,7 +21,11 @@ def getAccountInfo():
         gplay = GplayConnection(args["un"], args["pw"])
         acctInfo = AccountInfo(gplay.getGplayInstance().is_authenticated(), gplay.getGplayInstance().is_subscribed)
     except:
-        acctInfo = AccountInfo(False, False)   
+        err = Error('error occurred, log in or account info retrieval failed', 'gplay connection failed')
+        Response(err, 400)
+    finally:
+        if(gplay):
+            gplay.close()
          
     return Response(JsonHelper.toJSON(acctInfo), mimetype='application/json')
     return JsonHelper.toJSON(acctInfo)
