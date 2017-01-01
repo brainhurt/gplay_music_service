@@ -5,7 +5,6 @@ Created on Dec 23, 2016
 '''
 
 from gmusicapi import Mobileclient
-from config import log
 
 class GplayConnection:
     '''
@@ -24,11 +23,6 @@ class GplayConnection:
                 isLoggedIn = self.api.login(username, password, self.api.FROM_MAC_ADDRESS, 'en_us')
         else:
             isLoggedIn = False
-            
-        if(isLoggedIn):
-            log.info('Login success')
-        else:
-            log.error('login failed')
         
     
     def close(self):
