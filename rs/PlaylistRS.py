@@ -28,7 +28,7 @@ def getPlaylists():
         playlists = gplay.getPlaylists(include_deleted)
         return Response(JsonHelper.toJSON(playlists), mimetype='application/json')
         
-    except Exception, e:
+    except Exception as e:
         log.error(e)
         err = Error(e, 'error occurred while getting playlists')
         return Response(err, status=400)
