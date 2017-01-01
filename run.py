@@ -9,7 +9,6 @@ from rs.AboutRS import about
 from unitTesting import UnitRunner
 from rs.SearchRS import search_bp
 from rs.PlaylistRS import playlist
-from rs.DocumentationRS import docs
 import sys
 import config
 from config import log
@@ -20,7 +19,6 @@ app.register_blueprint(account_info, url_prefix='/account')
 app.register_blueprint(about, url_prefix='/about')
 app.register_blueprint(search_bp, url_prefix='/search')
 app.register_blueprint(playlist, url_prefix='/playlists')
-app.register_blueprint(docs, url_prefix='/docs')
 
 if __name__ == "__main__":
     if(sys.argv.__len__() >= 2):
