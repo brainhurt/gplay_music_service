@@ -24,7 +24,7 @@ def search():
         except:
             result = gplay.search(args["q"], config.maxResults)
         return Response(JsonHelper.toJSON(result), mimetype='application/json')
-    except Exception, e:
+    except Exception as e:
         log.error(e)
         err = Error(e, 'error occurred searching')
         return Response(err,status=400)
