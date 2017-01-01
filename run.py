@@ -26,7 +26,6 @@ if __name__ == "__main__":
             app.run(host=config.host, port=config.port)
         elif(sys.argv[1] == "test"):
             unitResult = UnitRunner.runUnitTests()
-            inteResult = IntegrationRunner.runIntegrationTests()
             log.info('Unit Tests: '+str(unitResult.failures.__len__())+' failed out of '+str(unitResult.testsRun))
         elif(sys.argv[1] == "unittest"):
             unitResult = UnitRunner.runUnitTests()
